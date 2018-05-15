@@ -1,9 +1,5 @@
-class StudentsController < ActionController::Base
-
-  def show
-
-    render "test"
-
+class StudentsController < ApplicationController
+  def index
+    @students = Student.all
   end
-
 end
